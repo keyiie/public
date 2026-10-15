@@ -177,7 +177,7 @@ class _HistoryPageState extends State<HistoryPage>
       PopupMenuButton(
         itemBuilder: (_) {
           final stats = HistoryArchive.stats(_historyController.archiveMid);
-          return [
+          return <PopupMenuEntry>[
             PopupMenuItem(
               onTap: () => _historyController.baseCtr.onPauseHistory(context),
               child: Text(
